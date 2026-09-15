@@ -20,7 +20,13 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('PRAKTIKUM MOBILE LANJUT'),
         ), // AppBar
-      ), // Scaffold
-    ); // MaterialApp
-  }
+  body: const Center(
+    child: Text(
+      'Hallo Nama Saya Farrel, saya siap mengikuti praktikum mobile lanjut',
+      style: TextStyle(fontSize: 24),
+    ), // Text
+  ), // Center
+), // Scaffold
+); // MaterialApp
+}
 }
