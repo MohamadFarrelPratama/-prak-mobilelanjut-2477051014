@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+// import 'column_widget.dart';
+// import 'row_widget.dart';
+import 'first_widget.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,23 +13,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Praktikum Mobile Lanjut',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.purple,
-        ), // ColorScheme.fromSeed
-      ), // ThemeData
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('PRAKTIKUM MOBILE LANJUT'),
-        ), // AppBar
-  body: const Center(
-    child: Text(
-      'Hallo Nama Saya Farrel, saya siap mengikuti praktikum mobile lanjut',
-      style: TextStyle(fontSize: 24),
-    ), // Text
-  ), // Center
-), // Scaffold
-); // MaterialApp
-}
+          seedColor: Colors.deepPurple,
+        ),
+        useMaterial3: true,
+      ),
+      home: const FirstWidget(),
+    );
+  }
 }
